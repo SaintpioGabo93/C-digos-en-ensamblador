@@ -1,3 +1,5 @@
+Para arquitectura x86
+
 .386
 .model flat
 
