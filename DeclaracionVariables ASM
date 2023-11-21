@@ -1,0 +1,17 @@
+.386
+.model flat
+
+.data
+num1	dword	11111111h
+num2	dword	10101010h
+ans		dword	0
+
+.code ; Aquí empieza la linea de códico
+start	proc	; Comenzamos  con start proc (procedure)
+		mov eax,num1 ; Mencionamos que el dato num1 se mueva al registo eax
+		add eax,num2 ; Sumamos la fuente num2 al destino eax
+		mov ans,eax	; Ans toma el valor de eax como fuente y ans como destino
+		ret
+
+start	endp
+end		start
